@@ -1,0 +1,112 @@
+.header {
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-right: 30px;
+  &__logo {
+    height: 100%;
+    width: 260px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0055ff;
+    font-size: 48px;
+    font-weight: 600;
+    line-height: 1;
+    color: #fff;
+  }
+
+  &__user {
+    display: flex;
+    align-items: center;
+    user-select: none;
+    &-menu {
+      position: relative;
+      display: flex;
+      align-items: center;
+      margin-right: 15px;
+      cursor: pointer;
+      .menu-header__name {
+        font-size: 14px;
+        font-weight: 600;
+        line-height: 20px;
+        margin-right: 5px;
+      }
+      .menu-header {
+        position: absolute;
+        top: 25px;
+        right: 0;
+        background-color: #fff;
+        box-shadow: 0px 2px 10px 0px rgba(0, 0, 0, 0.1);
+        border-radius: 10px;
+        min-width: 164px;
+        width: 100%;
+
+        &__item {
+          padding: 9px 10px;
+          display: flex;
+          align-items: center;
+          cursor: pointer;
+          border-radius: 8px;
+          span {
+            font-size: 12px;
+            font-weight: 500;
+            line-height: 20px;
+            color: rgba(0, 0, 0, 1);
+            margin-left: 10px;
+          }
+          &:hover {
+            background-color: rgba(0, 85, 255, 1);
+          }
+          &:hover span {
+            color: #fff;
+          }
+          &:hover svg path {
+            stroke: #fff;
+          }
+        }
+      }
+    }
+    &-menu.active {
+      .menu-header__name {
+        color: rgba(0, 85, 255, 1);
+      }
+      .menu-header__arrow {
+        transform: rotate(180deg);
+        path {
+          fill: #0055ff;
+        }
+      }
+    }
+    &-avatar {
+      width: 48px;
+      height: 48px;
+      border-radius: 3px;
+      background-color: #0055ff;
+    }
+  }
+}
+
+.navbar {
+  width: 260px;
+  height: 100%;
+  &__list {
+    margin-top: 35px;
+    li {
+      height: fit-content;
+      .navbar__list-item {
+        padding: 10px 10px 10px 30px;
+        height: 100%;
+        cursor: pointer;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 16px;
+        color: rgba(0, 0, 0, 1);
+        &:hover {
+          background-color: #fff;
+        }
+      }
+    }
+  }
+}

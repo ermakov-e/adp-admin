@@ -1,0 +1,28 @@
+.wrapper {
+  height: 100vh;
+}
+
+.container {
+  display: flex;
+  height: calc(100vh - 80px);
+}
+
+.main {
+  height: calc(100% - 40px);
+  width: calc(100% - 260px);
+  padding: 20px 80px 20px 40px;
+  background-color: #fff;
+  &__container {
+    height: 100%;
+    display: grid;
+    grid-template-rows: auto 1fr;
+
+    &-title {
+      padding: 8px 9px;
+      font-size: 20px;
+      font-weight: 700;
+      line-height: 20px;
+      background-color: rgba(227, 229, 234, 1);
+    }
+  }
+}

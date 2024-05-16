@@ -1,0 +1,21 @@
+.settings__tabs {
+  margin-top: 30px;
+  display: flex;
+  &-item {
+    padding: 14px 12px;
+    border-bottom: 2px solid rgba(68, 83, 113, 0.15);
+    border-top-left-radius: 6px;
+    border-top-right-radius: 6px;
+    cursor: pointer;
+    color: #0e1117;
+    &.active {
+      background-color: rgba(0, 85, 255, 0.1);
+      border-bottom: 2px solid #0055ff;
+      color: #0055ff;
+    }
+  }
+  &-space {
+    width: 12px;
+    border-bottom: 2px solid rgba(68, 83, 113, 0.15);
+  }
+}

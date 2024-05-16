@@ -1,0 +1,15 @@
+.button {
+  height: 36px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  padding: 0px 15px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  background-color: rgba(0, 85, 255, 1);
+  svg {
+    margin-right: 8px;
+  }
+}

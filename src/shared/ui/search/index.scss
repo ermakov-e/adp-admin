@@ -1,0 +1,26 @@
+.search {
+  height: 36px;
+  display: flex;
+  input {
+    padding: 12px;
+    border: 2px solid #e3e5ea;
+    width: 214px;
+    outline: none;
+    border-top-left-radius: 3px;
+    border-bottom-left-radius: 3px;
+    &:focus-visible {
+      border: 2px solid #0055ff;
+    }
+  }
+  &__icon {
+    display: flex;
+    padding: 11px 11px 10px 10px;
+    cursor: pointer;
+    background-color: #e3e5ea;
+    border-top-right-radius: 3px;
+    border-bottom-right-radius: 3px;
+  }
+  &__icon.active {
+    background-color: #0055ff;
+  }
+}
